@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="" class="top">
+        <label for="calc"><h1><span><center>Calculator App</center></span></h1></label>
+    </div>
+    <div class="col">
+        <button onclick="handleClick(1)" id="num" value="1">1</button>
+        <button onclick="handleClick(2)" id="num" value="2">2</button>
+        <button onclick="handleClick(3)" id="num" value="3">3</button><br>
+        <button onclick="handleClick(4)" id="num" value="4">4</button>
+        <button onclick="handleClick(5)" id="num" value="5">5</button>
+        <button onclick="handleClick(6)" id="num" value="6">6</button><br>
+        <button onclick="handleClick(7)" id="num" value="7">7</button>
+        <button onclick="handleClick(8)" id="num" value="8">8</button>
+        <button onclick="handleClick(9)" id="num" value="9">9</button><br> &emsp;&emsp;&emsp;
+        <button onclick="handleClick(0)" id="num" value="0">0</button>
+    </div>
+
+    <div class="col">
+        <button>clear</button><br>
+        <button onclick="add()">Add</button><br>
+        <button onclick="sub()">Sub</button><br>
+        <button onclick="mul()">Mul</button><br>
+        <button onclick="div()">Div</button><br>
+    </div>
+    <div>
+        <label for="equal">answer</label>
+    </div>
+
+    <div class="col1">
+        <label for="disp"><b>No 1</b></label>
+        <input type="text" name="" id="disp1">
+    </div>
+    <div class="col1">
+        <label for="disp"><b>No 2</b></label>
+        <input type="text" name="" id="disp2">
+    </div>
+    <div class="col2">
+        <label for="disp"><b>Ans</b></label>
+        <input type="text" name="" id="disp3">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
