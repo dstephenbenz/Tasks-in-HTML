@@ -13,9 +13,9 @@
 <body>
 
     <div id="" class="top">
-        <label for="calc"><h1><span><center>Calculator App</center></span></h1></label>
+        <label for="calc"><h1><span><center><span style="color: darkgoldenrod;">Calculator App</span></center></span></h1></label>
     </div>
-    <div class="col">
+    <div class="col" id="d1">
         <button onclick="handleClick(1)" id="num" value="1">1</button>
         <button onclick="handleClick(2)" id="num" value="2">2</button>
         <button onclick="handleClick(3)" id="num" value="3">3</button><br>
@@ -24,33 +24,27 @@
         <button onclick="handleClick(6)" id="num" value="6">6</button><br>
         <button onclick="handleClick(7)" id="num" value="7">7</button>
         <button onclick="handleClick(8)" id="num" value="8">8</button>
-        <button onclick="handleClick(9)" id="num" value="9">9</button><br> &emsp;&emsp;&emsp;
+        <button onclick="handleClick(9)" id="num" value="9">9</button><br> &emsp;&emsp;&emsp;&nbsp;
         <button onclick="handleClick(0)" id="num" value="0">0</button>
     </div>
 
-    <div class="col">
-        <button>clear</button><br>
-        <button onclick="add()">Add</button><br>
-        <button onclick="sub()">Sub</button><br>
-        <button onclick="mul()">Mul</button><br>
-        <button onclick="div()">Div</button><br>
+    <div class="col" id="d2">
+        <button onclick="clr()" class="opr">clear</button><br>
+        <button onclick="add()" class="opr">Add</button><br>
+        <button onclick="sub()" class="opr">Sub</button><br>
+        <button onclick="mul()" class="opr">Mul</button><br>
+        <button onclick="div()" class="opr">Div</button><br>
     </div>
     <div>
-        <label for="equal">answer</label>
+        <button onclick="solve()" class="opr"><label for="equal">answer</label></button>
+
     </div>
 
     <div class="col1">
-        <label for="disp"><b>No 1</b></label>
+        <label for="disp"><b></b></label>
         <input type="text" name="" id="disp1">
     </div>
-    <div class="col1">
-        <label for="disp"><b>No 2</b></label>
-        <input type="text" name="" id="disp2">
-    </div>
-    <div class="col2">
-        <label for="disp"><b>Ans</b></label>
-        <input type="text" name="" id="disp3">
-    </div>
+
 
     <script src="script.js"></script>
 </body>

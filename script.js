@@ -1,40 +1,46 @@
 //console.log(document.getElementById("num").value);
 
 
-var a = document.getElementById("disp1").value;
-var b = document.getElementById("disp2").value;
-var c = document.getElementById("disp3").value;
-
-
+var a = document.getElementById("disp1");
 
 function handleClick(data) {
-    let n = data;
-    //a.innerText = a.innerText + data;
-    a = parseInt(n);
-    console.log(a);
+    if (data == undefined) {
+        a.value = "";
+    } else {
+        a.value += data;
+    }
+
 
 }
-console.log(handleClick());
 
-function clear(data) {
-    a.value = this.value;
+function clr() {
+    a.value = "";
 }
 
-function add(x, y) {
-    var res = x + y;
-    return res;
+function solve() {
+    let s = a.value;
+    let w = eval(s);
+    a.value = w;
 }
-c.value = add();
 
-function sub(x, y) {
-    var res = x - y;
-    return res;
-}
-c.value = sub();
 
-function mul(x, y) {
-    var res = x * y;
-    return res;
+function add() {
+    a.value += "+";
 
 }
-c.value = mul();
+
+
+function sub() {
+    a.value += "-";
+
+}
+
+
+function mul() {
+    a.value += "*";
+
+}
+
+function div() {
+    a.value += "/";
+}

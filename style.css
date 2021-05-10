@@ -3,7 +3,25 @@
     float: left;
 }
 
+#disp1 {
+    align-content: center;
+    border: 1px solid black;
+    margin: 5px;
+    height: 30px;
+    width: 125px;
+}
+
+.opr {
+    margin: 10px;
+    background-color: cornsilk;
+    height: 30px;
+    width: 115px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
 #num {
+    background-color: chocolate;
     margin: 2px;
     height: 50px;
     width: 50px;
