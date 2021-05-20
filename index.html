@@ -2,50 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body onload="getToken()">
+    <h1>
+        <center>Spotify Web Clone App</center>
+    </h1>
 
-    <div id="" class="top">
-        <label for="calc"><h1><span><center><span style="color: darkgoldenrod;">Calculator App</span></center></span></h1></label>
+    <main class="main">
+        <aside class="sidebar">
+            <nav class="nav">
+                <ul>
+                    <li class="active">
+                        <h1>Spotify</h1>
+                    </li>
+                    <li>
+                        <a onclick="addTracks()" href="#">
+                            <h4>Add PlayList Item</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="deleteTracks()" href="#">
+                            <h4>Delete Playlist Item</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="reorderTracks()" href="#">
+                            <h4>Reorder Playlist Item</h4>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="maincontain">
+            <div class="container">
+                <div>
+                    <label for="name">Name</label>&emsp;&emsp;<span id="name"></span>
+                </div>
+                <div>
+                    <label for="track">Song Name</label><span id="sngname"></span>
+                </div>
+                <div>
+                    <label for="popl">Popularity</label><span id="popular"></span>
+                </div>
+                <div>
+                    <label for="prv">Preview song</label><span id="prvtrack"></span>
+                </div>
+            </div>
+        </section>
+    </main>
     </div>
-    <div class="col" id="d1">
-        <button onclick="handleClick(1)" id="num" value="1">1</button>
-        <button onclick="handleClick(2)" id="num" value="2">2</button>
-        <button onclick="handleClick(3)" id="num" value="3">3</button><br>
-        <button onclick="handleClick(4)" id="num" value="4">4</button>
-        <button onclick="handleClick(5)" id="num" value="5">5</button>
-        <button onclick="handleClick(6)" id="num" value="6">6</button><br>
-        <button onclick="handleClick(7)" id="num" value="7">7</button>
-        <button onclick="handleClick(8)" id="num" value="8">8</button>
-        <button onclick="handleClick(9)" id="num" value="9">9</button><br> &emsp;&emsp;&emsp;&nbsp;
-        <button onclick="handleClick(0)" id="num" value="0">0</button>
-    </div>
-
-    <div class="col" id="d2">
-        <button onclick="clr()" class="opr">clear</button><br>
-        <button onclick="add()" class="opr">Add</button><br>
-        <button onclick="sub()" class="opr">Sub</button><br>
-        <button onclick="mul()" class="opr">Mul</button><br>
-        <button onclick="div()" class="opr">Div</button><br>
-    </div>
-    <div>
-        <button onclick="solve()" class="opr"><label for="equal">answer</label></button>
-
-    </div>
-
-    <div class="col1">
-        <label for="disp"><b></b></label>
-        <input type="text" name="" id="disp1">
-    </div>
-
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 

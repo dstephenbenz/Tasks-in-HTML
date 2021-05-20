@@ -1,28 +1,88 @@
-.col {
-    margin-left: 220px;
-    float: left;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+html {
+    font-family: Arial;
+    font-size: 16px;
+    background: #d0c1f7;
 }
 
-#disp1 {
-    align-content: center;
-    border: 1px solid black;
-    margin: 5px;
-    height: 30px;
-    width: 125px;
+.sidebar {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    background: #312450;
+    font-size: 0.65em;
 }
 
-.opr {
-    margin: 10px;
-    background-color: cornsilk;
-    height: 30px;
-    width: 115px;
-    border: 1px solid black;
-    border-radius: 5px;
+.nav {
+    position: relative;
+    margin: 0 15%;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
 }
 
-#num {
-    background-color: chocolate;
-    margin: 2px;
-    height: 50px;
-    width: 50px;
+.nav ul {
+    list-style: none;
+    li {
+        position: relative;
+        margin: 3.2em 0;
+        a {
+            line-height: 5em;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.4em;
+            color: rgba(#FFF, 0.35);
+            display: block;
+            transition: all ease-out 300ms;
+        }
+        &.active {
+            color: rgb(255, 255, 255);
+        }
+        &:not(.active)::after {
+            opacity: 0.2;
+        }
+        &:not(.active):hover a {
+            color: rgba(#FFF, 0.75);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 0.2em;
+            background: black;
+            left: 0;
+            bottom: 0;
+            background-image: linear-gradient(to right, #5e42a6, #b74e91)
+        }
+    }
+}
+
+.maincontain {
+    position: relative;
+    width: 75%;
+    float: right;
+    height: 100vh;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    a {
+        position: relative;
+        img {
+            width: 48px;
+            height: 48px;
+        }
+    }
+    p {
+        text-transform: uppercase;
+        font-size: 1em;
+        letter-spacing: 0.1em;
+        color: #FFF;
+        font-weight: bold;
+        margin-top: 20px;
+    }
 }
